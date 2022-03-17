@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic-tac-toe</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="icon" href="img/cross.png">
+</head>
+<body>
+    <div id="choose_div">
+        <!-- <h1>Choose</h1> -->
+        <div id="x_o">
+            <img src="img/cross.png" id="choose_cross" onclick="choose_item(1)">
+            <img src="img/circle.png" id="choose_circle" onclick="choose_item(0)">
+        </div>
+        <div id="s">
+            <img src="img/smile.png" id="smile">
+        </div>
+    </div>
+    
+    <div id="game_table">
+        <div class="my_row">
+            <img src="img/bg.png" name="cell" onclick="fill_cell(0,0)">
+            <img src="img/bg.png" name="cell" onclick="fill_cell(0,1)">
+            <img src="img/bg.png" name="cell" onclick="fill_cell(0,2)">
+        </div>
+        <div class="my_row">
+            <img src="img/bg.png" name="cell" onclick="fill_cell(1,0)">
+            <img src="img/bg.png" name="cell" onclick="fill_cell(1,1)">
+            <img src="img/bg.png" name="cell" onclick="fill_cell(1,2)">
+        </div>
+        <div class="my_row">
+            <img src="img/bg.png" name="cell" onclick="fill_cell(2,0)">
+            <img src="img/bg.png" name="cell" onclick="fill_cell(2,1)">
+            <img src="img/bg.png" name="cell" onclick="fill_cell(2,2)">
+        </div>
+    </div>
+    <script src="script/script.js"></script>
+</body>
+</  >

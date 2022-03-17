@@ -1,0 +1,56 @@
+body{
+    background-image:  linear-gradient(to right, #270897, #f701ff);
+    height: 100%;
+}
+
+#game_table{
+    
+    visibility: hidden;
+}
+
+#choose_div, #game_table{
+    text-align:center;
+    padding-top: 30px;
+
+}
+
+.my_row{
+    margin: auto;
+}
+
+
+img[name="cell"] , #choose_cross, #choose_circle{
+    width: 150px;
+    filter: brightness(0);
+}
+
+#smile{
+    width: 250px;
+}
+
+img:hover{
+    filter: brightness(500%);
+}
+
+
+#choose_div{
+    padding-left: 30px;
+}
+
+#choose_circle:hover,
+#choose_cross:hover{
+    filter:invert(100%);
+}
+
+
+@media screen and (max-width: 460px) {
+    img[name="cell"]{
+        width: 100px !important;
+    }
+}
+
+
+@media (hover: none) {
+  img:hover { filter: brightness(0) !important;}
+}
+
